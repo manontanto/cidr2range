@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+# cidr2range.pl
+#
+# CIDRをip範囲に変換する
+#
+use Net::CIDR(cidr2range);
+use strict;
+
+die "Need CIDR.\n" if (@ARGV != 1);
+my $cidr = $ARGV[0];
+
+print join("\n", cidr2range("$cidr")) . "\n";
