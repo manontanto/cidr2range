@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-# cidr2range.pl
+# cidr2range
 #
 # CIDRをip範囲に変換する
 #
